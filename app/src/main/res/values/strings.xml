@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Hoteis</string>
+    <string name="error_hotel_not_found">Hotel não encontrado</string>
+    <string name="error_invalid_hotel">Dados inválidos. Hotel não preenchido corretamente.</string>
+    <string name="action_search">Pesquisar</string>
+    <string name="action_new_hotel">Novo Hotel</string>
+    <string name="action_info">Info</string>
+    <string name="hint_search">Procurar por hotel</string>
+    <string name="about_title">Dominando o Android</string>
+    <string name="about_message">Desenvolvido por nglauber</string>
+    <string name="about_button_site">Site</string>
+    <string name="form_label_name">Nome</string>
+    <string name="form_label_address">Endereço</string>
+    <string name="form_label_rating">Classificação</string>
+    <string name="action_delete">Excluir</string>
+    <plurals name="list_hotel_selected">
+        <item quantity="one">1 Selecionado</item>
+        <item quantity="other">%d selecionados</item>
+    </plurals>
+    <string name="message_hotels_deleted">%d itens excluídos</string>
+    <string name="undo">Desfazer</string>
+    <string name="action_share">Compartilhar</string>
+    <string name="share_text">Me hospedei ho %1$s e o classifiquei em %2$.1f estrelas</string>
+    <string name="action_edit">Editar</string>
+    <string name="error_sync">Erro ao sincronizar com o servidor</string>
+    <string name="error_login_failed">Falha ao efetuar login</string>
+    <string name="error_play_services_hot_supported">Google Play Services não disponível ou não suportado.</string>
+</resources>
