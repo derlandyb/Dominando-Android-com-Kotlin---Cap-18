@@ -1,6 +1,7 @@
 package br.com.belchior.derlandy.hoteis.repository.http
 
 import android.util.Log
+import br.com.belchior.derlandy.hoteis.auth.Auth
 import br.com.belchior.derlandy.hoteis.model.Hotel
 import br.com.belchior.derlandy.hoteis.repository.HotelRepository
 import br.com.belchior.derlandy.hoteis.repository.imagefiles.FindHotelPicture
@@ -11,7 +12,10 @@ import okhttp3.RequestBody
 class HotelHttp (private val service: HotelHttpApi,
                  private val repository: HotelRepository,
                  private val pictureFinder: FindHotelPicture,
-                 private val currentUser: String) {
+                 private val auth: Auth) {
+
+    private val currentUser: String
+        get() = auth.getUserId() ?: ""
 
     fun synchronizeWithServer() {
         if(currentUser.isBlank()) {

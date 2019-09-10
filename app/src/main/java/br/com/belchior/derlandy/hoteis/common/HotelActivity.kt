@@ -11,6 +11,7 @@ import br.com.belchior.derlandy.hoteis.details.HotelDetailsFragment
 import br.com.belchior.derlandy.hoteis.form.HotelFormFragment
 import br.com.belchior.derlandy.hoteis.list.HotelListFragment
 import br.com.belchior.derlandy.hoteis.list.HotelListViewModel
+import br.com.belchior.derlandy.hoteis.login.UserProfileFragment
 import br.com.belchior.derlandy.hoteis.model.Hotel
 import kotlinx.android.synthetic.main.activity_hotel.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -65,7 +66,7 @@ class HotelActivity : BaseActivity(),
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         when(item?.itemId) {
             R.id.action_info -> AboutDialogFragment().show(supportFragmentManager, "sobre")
-            //R.id.action_new -> HotelFormFragment.newInstance().open(supportFragmentManager)
+            R.id.action_user_info -> UserProfileFragment().open(supportFragmentManager)
         }
         return super.onOptionsItemSelected(item)
     }

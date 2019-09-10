@@ -25,4 +25,8 @@
     <string name="error_sync">Erro ao sincronizar com o servidor</string>
     <string name="error_login_failed">Falha ao efetuar login</string>
     <string name="error_play_services_hot_supported">Google Play Services não disponível ou não suportado.</string>
+    <string name="action_user_profile">Informações do usuário</string>
+    <string name="button_ok">OK</string>
+    <string name="button_logout">Logout</string>
+    <string name="profile_photo">Foto de perfil</string>
 </resources>
