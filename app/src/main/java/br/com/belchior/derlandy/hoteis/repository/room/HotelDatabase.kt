@@ -8,7 +8,7 @@ import br.com.belchior.derlandy.hoteis.model.Hotel
 import br.com.belchior.derlandy.hoteis.repository.sqlite.DATABASE_NAME
 import br.com.belchior.derlandy.hoteis.repository.sqlite.DATABASE_VERSION
 
-@Database(entities = [Hotel::class], version = DATABASE_VERSION)
+@Database(entities = [Hotel::class], version = DATABASE_VERSION, exportSchema = false)
 abstract class HotelDatabase : RoomDatabase() {
 
     abstract fun hotelDao(): HotelDao

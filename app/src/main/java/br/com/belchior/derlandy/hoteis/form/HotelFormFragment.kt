@@ -67,8 +67,8 @@ class HotelFormFragment : DialogFragment() {
             handleKeyboardEvent(i)
         }
 
-        dialog.setTitle(R.string.action_new_hotel)
-        dialog.window?.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE)
+        dialog?.setTitle(R.string.action_new_hotel)
+        dialog?.window?.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE)
     }
 
     private fun loadImage(url: String) {
@@ -134,7 +134,7 @@ class HotelFormFragment : DialogFragment() {
 
         try {
             if(viewModel.saveHotel(hotel)) {
-                dialog.dismiss()
+                dialog?.dismiss()
             } else {
                 errorInvalidHotel()
             }
