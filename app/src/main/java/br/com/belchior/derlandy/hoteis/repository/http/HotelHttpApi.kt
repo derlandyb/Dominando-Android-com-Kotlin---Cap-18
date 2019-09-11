@@ -9,7 +9,7 @@ import retrofit2.http.*
 interface HotelHttpApi {
 
     companion object {
-        const val WEB_SERVICE = "http://192.168.15.4/hotels"
+        const val WEB_SERVICE = "http://192.168.25.78:8080/hotels"
     }
 
     @GET("$WEB_SERVICE/{user}")
