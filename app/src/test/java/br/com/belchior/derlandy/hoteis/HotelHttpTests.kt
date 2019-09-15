@@ -1,6 +1,6 @@
 package br.com.belchior.derlandy.hoteis
 
-import br.com.belchior.derlandy.hoteis.auth.Auth
+import  br.com.belchior.derlandy.hoteis.auth.Auth
 import br.com.belchior.derlandy.hoteis.model.Hotel
 import br.com.belchior.derlandy.hoteis.repository.HotelRepository
 import br.com.belchior.derlandy.hoteis.repository.http.HotelHttp

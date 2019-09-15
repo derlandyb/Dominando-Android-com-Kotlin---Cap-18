@@ -55,8 +55,12 @@ dependencies {
     testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockito_kotlin_version"
     testImplementation "org.assertj:assertj-core:$assertj_version"
     testImplementation "androidx.arch.core:core-testing:$android_arch_test"
+    androidTestImplementation "androidx.arch.core:core-testing:$android_arch_test"
     androidTestImplementation "androidx.test:runner:$testrunner_version"
+    androidTestImplementation "androidx.test.ext:junit:$testrunner_version"
+    androidTestImplementation "androidx.test:rules:$testrules_version"
     androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+    androidTestImplementation "org.hamcrest:hamcrest-integration:$hamcrest_version"
 }
 
 //631860839247-4tnhlmm3bbhb9g3mc2275cdijedm76p9.apps.googleusercontent.com

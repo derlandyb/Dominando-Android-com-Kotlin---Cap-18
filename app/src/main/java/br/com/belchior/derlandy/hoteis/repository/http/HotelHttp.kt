@@ -124,6 +124,6 @@ class HotelHttp (private val service: HotelHttpApi,
     }
 
     companion object {
-        const val BASE_URL = "http://192.168.15.4/hotels/"
+        const val BASE_URL = "http://192.168.15.4/"
     }
 }
